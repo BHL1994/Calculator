@@ -139,33 +139,10 @@ void Calculator::equalsClicked() {
     }
 }
 
-//This function just resets all the values
+//This function simply resets all the values
 void Calculator::clearClicked() {
     firstValue = "";
     currentInput = "";
     pendingOperator = "";
     display->setText("0");
 }
-
-// void Calculator::calculateResult() {
-//     double result = 0.0;
-//     double currentValue = currentInput.toDouble();
-//     double initialValue = firstValue.toDouble();
-
-//     if (pendingOperator == "+") {
-//         result = initialValue + currentValue;
-//     } else if (pendingOperator == "-") {
-//         result = initialValue - currentValue;
-//     } else if (pendingOperator == "*") {
-//         result = initialValue * currentValue;
-//     } else if (pendingOperator == "/") {
-//         if (currentValue != 0.0) {
-//             result = initialValue / currentValue;
-//         } else {
-//             display->setText("Error: Division by zero");
-//             return;
-//         }
-//     }
-
-//     currentInput = QString::number(result);
-// }
